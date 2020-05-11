@@ -1,0 +1,6 @@
+
+
+## Script to store to ~/bin or anoter /bin
+
+cloudflare.sh YOUR_DOMAIN:$(SCRIPT TO OBTAIN THE IP)
+

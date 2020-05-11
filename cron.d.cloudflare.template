@@ -1,0 +1,8 @@
+
+MAILTO=USER@localhost
+SHELL=/bin/bash
+PATH=/home/USER/bin:/usr/local/bin:/usr/bin:/bin
+
+*/15 * * * * USER bash cloudflare.sh <YOUR_DOAMAIN>:$(SCRIPT_TO_OBTAIN_IP) --no-dry-run >> /var/cache/local/cloudflare/cloudflare.log
+
+
