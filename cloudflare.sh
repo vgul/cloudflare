@@ -36,9 +36,9 @@ function usage {
         
   '${CONF_FILE}' should contain variables
 
-      KONTEH_LOGIN=pass
-      KONTEH_PASSWD=pass
-
+      Zone_ID='48...'
+      Email='ben.laden@gmail.com'
+      Your_API_Key='...'
 EOC
 
 }
@@ -122,10 +122,10 @@ for E in "${TARGET[@]}"; do
     printf -v MESG "Host: %-25s; Desired: %14s." "'${HOST}'" "'${IP}'"
     if [ -n "${DATA}" ]; then
         if [ "${IP}" != "${OLD_IP}" ]; then
-            MESG="${MESG} Got IPs are mismatch [$OLD_IP]"
+            MESG="${MESG} Got IP are mismatch [$OLD_IP]"
             log "$MESG"
         else
-            MESG="${MESG} IPs are equil."
+            MESG="${MESG} IP are equil."
             log "$MESG"
             continue
         fi
